@@ -8,6 +8,7 @@ for (i = 0; i < drumLen; i++) {
     let buttonInnerHTML = this.innerHTML;
 
     checkKey(buttonInnerHTML);
+    buttonAnime(buttonInnerHTML);
   }
 }
 
@@ -15,6 +16,7 @@ for (i = 0; i < drumLen; i++) {
 
 document.addEventListener("keydown", function (event) {
   checkKey(event.key);
+  buttonAnime(event.key);
 });
 
 // PLAY SOUND
@@ -53,4 +55,14 @@ function checkKey(key) {
       console.log("buttonInnerHTML");
       break;
   }
+}
+
+function buttonAnime(currentKey)
+{
+  let activeButton = document.querySelector("."+currentKey);
+  activeButton.classList.add("pressed");
+
+  setTimeout(function(){
+    activeButton.classList.remove("pressed");
+  }, 100)
 }

@@ -9,31 +9,31 @@ h1 {
   font-family: "Arvo", cursive;
   text-shadow: 5px 0 black;
 }
-.w {
+.W {
     background:url("images/tom1.png");
 }
 
-.a {
+.A {
     background:url("images/tom2.png");
 }
 
-.s {
+.S {
     background:url("images/tom3.png");
 }
 
-.d {
+.D {
     background:url("images/tom4.png");
 }
 
-.j {
+.J {
     background:url("images/snare.png");
 }
 
-.k {
+.K {
     background:url("images/crash.png");
 }
 
-.l {
+.L {
     background:url("images/kick.png");
 }
 .set {
